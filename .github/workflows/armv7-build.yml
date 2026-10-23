@@ -33,9 +33,6 @@ jobs:
             doxygen cmake autogen autopoint groff gtk-doc-tools \
             libtasn1-bin
 
-      - name: Set up Android SDK
-        uses: android-actions/setup-android@v3
-
       - name: Install Android platform and NDK
         run: |
           sdkmanager "platforms;android-35" "ndk;27.2.12479018"
